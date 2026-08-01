@@ -20,9 +20,9 @@ spec:
       containers:
       - name: cloudwarden
 
-        image: cloudwarden:latest
+        image: amanansary0215/cloudwarden-ai:latest
 
-        imagePullPolicy: Never
+        imagePullPolicy: Always
 
         ports:
         - containerPort: 8501
