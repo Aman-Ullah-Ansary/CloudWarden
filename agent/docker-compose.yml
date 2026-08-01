@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+
+  cloudwarden:
+
+    image: cloudwarden:latest
+
+    container_name: cloudwarden
+
+    ports:
+      - "8503:8501"
+
+    volumes:
+      - ./cloudwarden.db:/app/cloudwarden.db
+
+    restart: unless-stopped
+
+    environment:
+      - PYTHONUNBUFFERED=1

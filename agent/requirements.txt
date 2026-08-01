@@ -1,0 +1,15 @@
+streamlit
+streamlit-autorefresh
+streamlit-option-menu
+pandas
+plotly
+scikit-learn
+numpy
+requests
+fastapi
+uvicorn
+prometheus-client
+groq
+bcrypt
+reportlab
+python-dotenv

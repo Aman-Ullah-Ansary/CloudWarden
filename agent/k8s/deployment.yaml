@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: cloudwarden
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: cloudwarden
+
+  template:
+    metadata:
+      labels:
+        app: cloudwarden
+
+    spec:
+      containers:
+      - name: cloudwarden
+
+        image: cloudwarden:latest
+
+        imagePullPolicy: Never
+
+        ports:
+        - containerPort: 8501

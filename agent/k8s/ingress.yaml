@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+
+metadata:
+  name: cloudwarden-ingress
+
+spec:
+  rules:
+    - host: cloudwarden.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: cloudwarden-service
+                port:
+                  number: 80
