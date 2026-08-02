@@ -195,7 +195,7 @@ if page == "Dashboard":
     # Welcome Banner
     # ------------------------------------------------------
 
-    st.markdown("## ☁️ CloudWarden AI Dashboard")
+    st.markdown("## ☁️ CloudWarden-AI Dashboard")
     st.markdown("#### Welcome back, Aman 👋")
     st.caption("Monitor • Predict • Optimize Kubernetes Cloud Costs")
 
