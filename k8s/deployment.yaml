@@ -2,34 +2,27 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-  name: payments-api
-  namespace: payments
+  name: cloudwarden
 
 spec:
-  replicas: 3
+  replicas: 1
 
   selector:
     matchLabels:
-      app: payments-api
+      app: cloudwarden
 
   template:
     metadata:
       labels:
-        app: payments-api
+        app: cloudwarden
 
     spec:
       containers:
-      - name: payments-api
-        image: nginx:latest
+      - name: cloudwarden
+
+        image: amanansary0215/cloudwarden-ai:latest
+
+        imagePullPolicy: Always
 
         ports:
-        - containerPort: 80
-
-        resources:
-          requests:
-            cpu: "500m"
-            memory: "256Mi"
-
-          limits:
-            cpu: "1000m"
-            memory: "512Mi"
+        - containerPort: 8501
