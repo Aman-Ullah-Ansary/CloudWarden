@@ -271,8 +271,8 @@ docker build -t cloudwarden:latest .
 docker compose up
 ```
 
-- Dashboard → http://localhost:8503
-- API → http://localhost:8000
+- Dashboard → http://localhost:****
+- API → http://localhost:****
 - Prometheus → http://localhost:9090
 - Grafana → http://localhost:3000 (login: `admin` / `admin`, dashboard auto-loads)
 
@@ -346,9 +346,16 @@ For the full GitHub Actions pipeline (build → push → deploy → notify) to r
 
 Contributions are welcome. Please open an issue to discuss significant changes before submitting a pull request.
 
+
+## 🚀 Live Demo
+
+[ Deployment available upon request. 
+Production deployment is hosted on AWS EC2/localhost
+To minimize cloud infrastructure costs, the public instance is not kept online continuously.]
+
 ## 📄 License
 
-MIT L.
+MIT 
 
 ---
 
