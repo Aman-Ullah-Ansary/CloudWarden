@@ -312,19 +312,32 @@ For the full GitHub Actions pipeline (build → push → deploy → notify) to r
 
 ---
 
-## 📷 Screenshots
+## 📸 Screenshots
 
-_Add screenshots here to make this section land — a README with real images converts far better than a bullet list:_
+<details>
+<summary><b>📷 Click to view all screenshots</b></summary>
 
-- Streamlit Dashboard
-- AI Copilot
-- Cost Forecast
-- Anomaly Detection
-- GitHub Actions run
-- Argo CD sync view
-- Grafana dashboard
 
----
+<img width="1917" height="805" alt="Screenshot 2026-08-02 183207" src="https://github.com/user-attachments/assets/51e83ec2-cc6f-4ad4-8660-de5865c1344b" />
+<img width="1476" height="756" alt="Screenshot 2026-08-03 003822" src="https://github.com/user-attachments/assets/4234c39d-f4f6-4710-9c2a-098e3f9fb6a1" />
+<img width="1472" height="753" alt="Screenshot 2026-08-03 003858" src="https://github.com/user-attachments/assets/64e6bdff-3ebe-4712-86b3-081c03988d37" />
+<img width="1915" height="936" alt="Screenshot 2026-08-03 014631" src="https://github.com/user-attachments/assets/c82a5506-b72e-47d9-9f50-5b68e9abca64" />
+<img width="1917" height="922" alt="Screenshot 2026-08-03 014649" src="https://github.com/user-attachments/assets/518e36df-f8e9-404c-a270-468036e3d4ac" />
+<img width="1917" height="917" alt="Screenshot 2026-08-03 014701" src="https://github.com/user-attachments/assets/f0c97247-5539-4941-816d-e369cdd791ba" />
+<img width="1917" height="886" alt="Screenshot 2026-08-03 014726" src="https://github.com/user-attachments/assets/e4040021-45db-4ea5-8eef-d310b75fc001" />
+<img width="1917" height="942" alt="Screenshot 2026-08-03 014807" src="https://github.com/user-attachments/assets/6f521b2a-f76e-4602-8e28-9cb9dcc04db6" />
+<img width="1917" height="906" alt="Screenshot 2026-08-03 014930" src="https://github.com/user-attachments/assets/a820c38e-3905-49a8-ac7e-ca6eecba8e73" />
+<img width="1917" height="828" alt="Screenshot 2026-08-03 015013" src="https://github.com/user-attachments/assets/80773120-e555-496f-b981-5d6028ce5a87" />
+<img width="1818" height="915" alt="Screenshot 2026-08-02 161530" src="https://github.com/user-attachments/assets/616dc7cc-48f3-4494-8a03-3997ed19e679" />
+<img width="1577" height="715" alt="Screenshot 2026-08-02 162237" src="https://github.com/user-attachments/assets/88265d0c-af1a-4461-81cc-07175648b734" />
+<img width="1657" height="820" alt="Screenshot 2026-08-02 162459" src="https://github.com/user-attachments/assets/a1702b1b-94d3-46ec-af27-cc9247ede642" />
+<img width="1917" height="985" alt="Screenshot 2026-08-02 164302" src="https://github.com/user-attachments/assets/9c15e59a-c609-4c20-b083-fdc8dbe0066b" />
+<img width="1917" height="840" alt="Screenshot 2026-08-02 172044" src="https://github.com/user-attachments/assets/fedc440f-cd08-4112-a4b6-279def8dfc93" />
+<img width="1917" height="847" alt="Screenshot 2026-08-02 173623" src="https://github.com/user-attachments/assets/97c96a16-52b5-4899-a914-3a1cdf75193e" />
+<img width="1917" height="1011" alt="Screenshot 2026-08-02 183110" src="https://github.com/user-attachments/assets/9165f6c2-6fa1-439e-a182-46f38b5f4bd9" />
+
+
+</details>
 
 ## 🤝 Contributing
 
