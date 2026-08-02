@@ -1,6 +1,6 @@
 <div align="center">
 
-# ☁️ CloudWarden
+## ☁️ CloudWarden
 
 ### AI-Powered Kubernetes Cost Governance Platform
 
@@ -332,7 +332,7 @@ Contributions are welcome. Please open an issue to discuss significant changes b
 
 ## 📄 License
 
-No license file is currently included in this repository. Add a `LICENSE` file (e.g. MIT) to clarify usage terms for others.
+MIT L.
 
 ---
 
