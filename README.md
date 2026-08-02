@@ -106,41 +106,44 @@ These are designed for but not yet implemented — listed here intentionally so 
 
 **Build & deployment flow:**
 
-```
+## 🔄 CI/CD & Deployment Pipeline
+
+```text
 Developer
    │
    ▼
-Git Commit ──► GitHub Repository
-                    │
-                    ▼
-              GitHub Actions
-                    │
-    ┌───────────────┼───────────────┐
-    ▼                ▼               ▼
-Unit Tests      Lint (flake8)   Security Scan (Bandit)
-    │                │               │
-    └────────────────┼───────────────┘
-                      ▼
-               Docker Build & Push
-                      │
-                      ▼
-                  Docker Hub
-                      │
-                      ▼
-              Argo CD (GitOps sync)
-                      │
-                      ▼
-              Kubernetes Cluster
-                      │
-         ┌────────────┼────────────┐
-         ▼            ▼            ▼
-    CloudWarden   Prometheus    Grafana
-    Dashboard/API  (scrapes    (visualizes
-                   /metrics)    metrics)
-                      │
-                      ▼
-              Slack Notification
-              (build + deploy status)
+Git Commit
+   │
+   ▼
+GitHub Repository
+   │
+   ▼
+GitHub Actions
+   │
+   ├── Unit Tests (pytest)
+   ├── Code Linting (flake8)
+   ├── Security Scan (Bandit)
+   └── Docker Build & Push
+                 │
+                 ▼
+            Docker Hub
+                 │
+                 ▼
+      Kubernetes / Argo CD
+                 │
+                 ▼
+      CloudWarden Application
+       (FastAPI + Streamlit)
+                 │
+        ┌────────┴────────┐
+        ▼                 ▼
+   OpenCost API      SQLite Database
+        │
+        ▼
+ AI Analysis & Forecasting
+        │
+        ▼
+PDF Reports • REST API • Dashboard
 ```
 
 ---
