@@ -18,11 +18,35 @@ spec:
 
     spec:
       containers:
-      - name: cloudwarden
+        - name: cloudwarden
+          image: amanansary0215/cloudwarden-ai:latest
+          imagePullPolicy: Always
 
-        image: amanansary0215/cloudwarden-ai:latest
+          ports:
+            - containerPort: 8501
 
-        imagePullPolicy: Always
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8501
+            initialDelaySeconds: 15
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 3
 
-        ports:
-        - containerPort: 8501
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8501
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+            failureThreshold: 3
+
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
